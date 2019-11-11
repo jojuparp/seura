@@ -7,6 +7,8 @@ javaw --module-path c:\devel\javafx\lib --add-modules javafx.controls,javafx.fxm
 
 Kun ohjelma käynnistyy, on näkyvillä ohjelman pääikkuna.
 
+![alt text](https://github.com/jojuparp/seura/blob/master/dokumentaatio/kuvat/paaikkuna.jpg "Pääikkuna")
+
 ### Käyttö
 
 Navigoidaan vasemmasta sivupalkista halutun joukkueen kohdalle, ja valitaan se hiirellä. Harrastajia voi poistaa/lisätä valitsemalla joukkue ja käyttämällä ylävalikon vaihtoehtoja. Oikeassa paneelissa näkyy harrastajan tiedot. Mahdollisuus käyttää hakutoimintoa ja etsiä harrastajia oman nimen perusteella.

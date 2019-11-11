@@ -22,3 +22,4 @@ Toteutetaan urheiluseuran jäsen- ja joukkuerekisteri
 * haku joukkueen perusteella
 * joukkueen lisääminen ja poistaminen
 * lisätietojen muokkaaminen
+
