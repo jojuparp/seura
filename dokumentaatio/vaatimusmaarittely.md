@@ -23,3 +23,9 @@ Toteutetaan urheiluseuran jäsen- ja joukkuerekisteri
 * joukkueen lisääminen ja poistaminen
 * lisätietojen muokkaaminen
 
+### Jatkokehitysideoita:
+
+* Tulostustoiminto tietyn joukkueen jäsenille
+* Joukkueen poistaminen
+* Hakutoiminnon muuttaminen niin, että jäsenta voi hakea osittaisen nimen perusteella
+
