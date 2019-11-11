@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="fi.jyu.mit.fxgui.ModalController">
+   <children>
+      <BorderPane prefHeight="466.0" prefWidth="387.0">
+         <bottom>
+            <ButtonBar prefHeight="41.0" prefWidth="209.0" BorderPane.alignment="CENTER">
+              <buttons>
+                <Button mnemonicParsing="false" text="Tulosta" />
+                  <Button mnemonicParsing="false" onAction="#handleDefaultOK" text="Sulje" />
+              </buttons>
+               <BorderPane.margin>
+                  <Insets right="5.0" />
+               </BorderPane.margin>
+            </ButtonBar>
+         </bottom>
+         <center>
+            <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

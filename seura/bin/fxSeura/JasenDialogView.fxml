@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="411.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxSeura.JasenGUIController">
+   <center>
+      <ScrollPane fitToWidth="true" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <content>
+            <GridPane hgap="10.0">
+              <columnConstraints>
+                <ColumnConstraints fillWidth="false" halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" />
+                <ColumnConstraints hgrow="ALWAYS" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <padding>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <Label text="Nimi" />
+                  <Label text="Puhelinnumero" GridPane.rowIndex="2" />
+                  <Label text="Sähköposti" GridPane.rowIndex="3" />
+                  <Label text="Huoltaja" GridPane.rowIndex="4" />
+                  <Label text="Huoltajan puhnro" GridPane.rowIndex="5" />
+                  <Label text="Osoite" GridPane.rowIndex="7" />
+                  <TextField fx:id="editNimi" GridPane.columnIndex="1" />
+                  <TextField fx:id="editPno" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="editSapo" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="editHuoltajanNimi" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="editHuoltajanPno" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField fx:id="editOsoite" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <Label text="Huoltajan sähköpostiosoite" GridPane.rowIndex="6" />
+                  <TextField fx:id="editHuoltajanSapo" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Label text="Lisätietoja" GridPane.rowIndex="8" />
+                  <TextField fx:id="editLisatietoja" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <Label text="Syntymäaika" GridPane.rowIndex="1" />
+                  <TextField fx:id="editSyntaika" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </content>
+      </ScrollPane>
+   </center>
+   <bottom>
+      <BorderPane BorderPane.alignment="CENTER">
+         <right>
+            <HBox spacing="10.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </BorderPane.margin>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleTallenna" text="Tallenna" />
+                  <Button fx:id="peruutaButton" mnemonicParsing="false" onAction="#handlePeruuta" text="Peruuta" />
+               </children>
+            </HBox>
+         </right>
+         <left>
+            <HBox fillHeight="false" spacing="10.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </BorderPane.margin>
+            </HBox>
+         </left>
+         <top>
+            <Label fx:id="labelVirhe" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+   </bottom>
+</BorderPane>
