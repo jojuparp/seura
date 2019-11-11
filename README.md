@@ -2,6 +2,12 @@
 
 Projektissa toteutetaan yksinkertainen harrasteseuran jäasen- ja joukkuerekisteri
 
+### Ajettava sovellus
+
+Ajettava sovellus, lataa ja aja. Kts. [Käyttöohje](https://github.com/jojuparp/seura/blob/master/dokumentaatio/ohje.md)
+
+[Rekisteri.jar](https://github.com/jojuparp/seura/raw/master/rekisteri.jar)
+
 ### Riippuvuudet
 
 * Sovellus on tehty JDK:n versiolle 11.0.1. Takuita toimivuudelle vanhempien versioiden kanssa ei ole. <br> Sopivan version voi ladata esim. [täältä](https://jdk.java.net/13/) 
