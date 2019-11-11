@@ -1,0 +1,1 @@
+## Harrasteseuran jäsen- ja joukkuerekisteri
