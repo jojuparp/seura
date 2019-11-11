@@ -313,15 +313,15 @@ public class JasenetJaJoukkueet {
      * @param jasenId jäsenen id
      * @return lista relaatioista
      */
-    public List<JasenJaJoukkue> annaJasenenJoukkuuet(int jasenId) {
-        
-        List<JasenJaJoukkue> loydetyt = new ArrayList<JasenJaJoukkue>();
-        
-        try ( Connection yhteys = kanta.annaKantayhteys(); 
-              PreparedStatement sql = yhteys.prepareStatement("SELECT * FROM JasenetJaJoukkueet WHERE jasenID LIKE ?") ) {
-                
-        }
-    }
+//    public List<JasenJaJoukkue> annaJasenenJoukkuuet(int jasenId) {
+//        
+//        List<JasenJaJoukkue> loydetyt = new ArrayList<JasenJaJoukkue>();
+//        
+//        try ( Connection yhteys = kanta.annaKantayhteys(); 
+//              PreparedStatement sql = yhteys.prepareStatement("SELECT * FROM JasenetJaJoukkueet WHERE jasenID LIKE ?") ) {
+//                
+//        }
+//    }
     
     
     /**

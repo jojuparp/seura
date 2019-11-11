@@ -217,70 +217,70 @@ public class Jasenet {
     public void setTiedostonOletusNimi(String nimi) { tiedostonOletusNimi = nimi; }
     
     
-//    /**
-//     * Metodi jäsenen tietotiedoston kirjoittamiselle.
-//     * Metodi testatttu lukumetodin yhteydessä toimivaksi.
-//     */
-//    public void kirjoitaTiedosto() {
-//        
-//        if ( !muutettu ) return;
-//        
-//        
-//        File vKopio = new File(getVkNimi());
-//        File tied = new File(getTiedostonOletusNimi());
-//        vKopio.delete();
-//        tied.renameTo(vKopio);
-//        
-//        String tiedNimi = getTiedostonOletusNimi();
-//        try (PrintStream fo = new PrintStream(new FileOutputStream(tiedNimi, false))) {
-//            
-//            for ( int i = 0; i < getLkm(); i++ ) { fo.println(alkiot[i].toString()); }
-//            fo.close();
-//            
-//        } catch (FileNotFoundException ex) { System.err.println("tiedosto ei aukea" + ex.getMessage()); }
-//        
-//        muutettu = false;
-//    }
-//    
-//    
-//    /**
-//     * Metodi tiedoston lukemiselle
-//     * @param tied tiedoston nimi
-//     * @example
-//     * <pre name="test">
-//     * #import java.io.*;
-//     * 
-//     * String testi = "jasenetTesti";
-//     * Jasenet jasenet = new Jasenet();
-//     * jasenet.setTiedostonOletusNimi(testi);
-//     * Jasen aku1 = new Jasen(); Jasen aku2 = new Jasen();
-//     * aku1.taytaTiedot(); aku2.taytaTiedot();
-//     * aku1.rekisteroi(); aku2.rekisteroi();
-//     * jasenet.lisaa(aku1); jasenet.lisaa(aku2);
-//     * jasenet.kirjoitaTiedosto();
-//     * jasenet = new Jasenet(); //tyhjäys
-//     * jasenet.lueTiedosto(testi);
-//     * jasenet.anna(0).getId() === 1;
-//     * </pre>
-//     */
-//    public void lueTiedosto(String tied) {
-//        setTiedostonOletusNimi(tied);
-//        
-//        
-//        try ( Scanner lukija = new Scanner(new FileReader(getTiedostonOletusNimi()))) {
-//            
-//            while ( lukija.hasNextLine() ) {
-//                String rivi = lukija.nextLine();
-//                Jasen jasen = new Jasen();
-//                jasen.parse(rivi);
-//                lisaa(jasen);
-//            }
-//            
-//        } catch (FileNotFoundException ex) { 
-//            System.err.println("tiedosto ei aukea " + ex.getMessage());
-//        } 
-//        
-//    }
+    /**
+     * Metodi jäsenen tietotiedoston kirjoittamiselle.
+     * Metodi testatttu lukumetodin yhteydessä toimivaksi.
+     */
+    public void kirjoitaTiedosto() {
+        
+        if ( !muutettu ) return;
+        
+        
+        File vKopio = new File(getVkNimi());
+        File tied = new File(getTiedostonOletusNimi());
+        vKopio.delete();
+        tied.renameTo(vKopio);
+        
+        String tiedNimi = getTiedostonOletusNimi();
+        try (PrintStream fo = new PrintStream(new FileOutputStream(tiedNimi, false))) {
+            
+            for ( int i = 0; i < getLkm(); i++ ) { fo.println(alkiot[i].toString()); }
+            fo.close();
+            
+        } catch (FileNotFoundException ex) { System.err.println("tiedosto ei aukea" + ex.getMessage()); }
+        
+        muutettu = false;
+    }
+    
+    
+    /**
+     * Metodi tiedoston lukemiselle
+     * @param tied tiedoston nimi
+     * @example
+     * <pre name="test">
+     * #import java.io.*;
+     * 
+     * String testi = "jasenetTesti";
+     * Jasenet jasenet = new Jasenet();
+     * jasenet.setTiedostonOletusNimi(testi);
+     * Jasen aku1 = new Jasen(); Jasen aku2 = new Jasen();
+     * aku1.taytaTiedot(); aku2.taytaTiedot();
+     * aku1.rekisteroi(); aku2.rekisteroi();
+     * jasenet.lisaa(aku1); jasenet.lisaa(aku2);
+     * jasenet.kirjoitaTiedosto();
+     * jasenet = new Jasenet(); //tyhjäys
+     * jasenet.lueTiedosto(testi);
+     * jasenet.anna(0).getId() === 1;
+     * </pre>
+     */
+    public void lueTiedosto(String tied) {
+        setTiedostonOletusNimi(tied);
+        
+        
+        try ( Scanner lukija = new Scanner(new FileReader(getTiedostonOletusNimi()))) {
+            
+            while ( lukija.hasNextLine() ) {
+                String rivi = lukija.nextLine();
+                Jasen jasen = new Jasen();
+                jasen.parse(rivi);
+                lisaa(jasen);
+            }
+            
+        } catch (FileNotFoundException ex) { 
+            System.err.println("tiedosto ei aukea " + ex.getMessage());
+        } 
+        
+    }
     
     
 //    /**

@@ -1,6 +1,7 @@
 package fxSeura;
 
 import javafx.application.Platform;
+
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ScrollPane;
@@ -14,9 +15,13 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
+
+import fi.jyu.mit.fxgui.Dialogs;
+import fi.jyu.mit.fxgui.ListChooser;
+import fi.jyu.mit.fxgui.ModalController;
+
 import java.net.URI;
 import java.net.URISyntaxException;
-import fi.jyu.mit.fxgui.*;
 
 
 /**
