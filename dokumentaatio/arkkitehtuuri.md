@@ -4,6 +4,8 @@
 
 Ohjelman tiedot tallennetaan seuraavanlaisiin tekstitiedostoihin:
 
+![Tallennus](https://github.com/jojuparp/seura/blob/master/dokumentaatio/kuvat/tallennukset.png)
+
 ### CRC-kortit
 
 Luodaan luokille seuraavanlaiset CRC-kortit
@@ -15,3 +17,7 @@ Luodaan luokille seuraavanlaiset CRC-kortit
 ![JasenJaJoukkue](https://github.com/jojuparp/seura/blob/master/dokumentaatio/kuvat/jasenjajoukkue-crc.png)
 ![JasenetJaJoukkueet](https://github.com/jojuparp/seura/blob/master/dokumentaatio/kuvat/jasenetjajoukkueet-crc.png)
 ![Seura](https://github.com/jojuparp/seura/blob/master/dokumentaatio/kuvat/seura-crc.png)
+
+### Oliorakenteen kuvaus
+
+![Oliorakenne](https://github.com/jojuparp/seura/blob/master/dokumentaatio/kuvat/oliorakenne.png)
