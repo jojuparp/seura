@@ -7,7 +7,7 @@ javaw --module-path c:\devel\javafx\lib --add-modules javafx.controls,javafx.fxm
 
 Kun ohjelma käynnistyy, on näkyvillä ohjelman pääikkuna.
 
-![Paaikkuna](https://github.com/jojuparp/seura/blob/master/dokumentaatio/kuvat/paaikkuna.jpg)
+![Paaikkuna](https://github.com/jojuparp/seura/blob/master/dokumentaatio/kuvat/paaikkuna.png)
 
 ### Käyttö
 
