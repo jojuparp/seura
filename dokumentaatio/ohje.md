@@ -1,6 +1,6 @@
 ## Ohjelman käyttö
 
-Ohjelmaa käytetään antamalla komentoriville seuraava komento:
+Lataa ajettava sovellus etusivulta ja anna seuraava komento siinä hakemistossa, mihin tallensit sen: <br>
 javaw --module-path c:\devel\javafx\lib --add-modules javafx.controls,javafx.fxml -jar rekisteri.jar 
 
 ### Pääikkuna
